@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You-Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+     
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    
+    <li class="login page">
+      <div class="form">
+        <div>
+            <h2><font color= "white" > <u>You-Chat</u></font></h2>
+            <h4><font color="white">Developed By- Ayush Shrivastav</font></h4>
+        </div>
+        <h3 class="title">Hey There! - What's your Nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+      <div class= "kyd" >
+           <a href="https://www.github.com/AyushShri" target="_blank" > <img src="http://pngimg.com/uploads/github/github_PNG20.png" width="40" height="37" > </a>
+           <a href="https://www.facebook.com/ayush.shrivastav.5891" target="_blank" > <img src="https://image.flaticon.com/icons/png/512/61/61109.png" width="38" height="35" > </a>
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
