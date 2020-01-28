@@ -58,10 +58,16 @@
     position: absolute;
   
     text-align: center;
-    top: 42%;
+    top: 39%;
     width: 100%;
   }
-  
+  .kyd {
+position: absolute;
+text-align:center;
+top:83%;
+width:100%;
+  }
+
   .login.page .form .usernameInput {
     background-color: transparent;
     border: none;
@@ -135,7 +141,7 @@
   }
   
   /* Input */
-
+  
   .inputMessage {
     border: 10px solid #000;
     bottom: 0;
