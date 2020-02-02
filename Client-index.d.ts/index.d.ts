@@ -23,6 +23,7 @@ interface SocketIOStatic {
 	 */
 	(): SocketIO.Server;
 
+	
 	/**
 	 * Creates a new Server
 	 * @param srv The HTTP server that we're going to bind to
