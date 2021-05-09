@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You-Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+     
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input type="text" id = "mess" class="inputMessage" placeholder="Type here..."/>
+    </li>
+    
+    <li class="login page">
+      <div class="form">
+        <div>
+            <h2><font color= "white" > YOU-CHAT</font></h2>
+            <h4><font color="white">Developed By - Ayush Shrivastav</font></h4>
+        </div>
+        <h3 class="title">Hey There! - What's your Nickname?</h3>
+        <form action="http://localhost:4000/test" method="GET">
+          <input class="usernameInput" type="text" name="username" id="username" maxlength="14" />
+         <input type="submit" hidden="true" />
+         <script type=text/javascript>
+	
+          function tq() {
+            var un=document.getElementById("mess").value;
+            
+            let req = {};
+            req.id = un;
+            console.log(req);
+            
+            let request = fetch('http://localhost:8082/chat-app/main.html', {
+              method : "POST",
+              headers : {'Content-type': 'application/json'},
+              body : JSON.stringify(req)
+            });
+            request.then(res => {
+              console.log(res);
+            })
+            
+        
+          }
+          </script>
+        
+          <button onclick="tq()">Submit</button>
+        </form>
+      </div>
+      <div class= "kyd" >
+          <h4>Connect with the Dev:</h4>
+        <a href="https://www.github.com/AyushShri" target="_blank" > <img src="https://www.pinclipart.com/picdir/big/197-1979961_github-icon-vector-git-branch-icon-png-clipart.png" width="30" height="37" > </a>
+        <a href="https://www.linkedin.com/in/ayush-shrivastav" target="_blank" > <img src="https://image.flaticon.com/icons/png/512/61/61109.png" width="35" height="37" > </a>
+    </div>
+    </li>
+   
+  </ul>
+ 
+
+</body>
+</html>
