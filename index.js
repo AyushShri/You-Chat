@@ -15,7 +15,7 @@ io.on('connection',function(socket){
     
     });
 });
-http.listen(process.env.PORT ||4000,function(){
+http.listen(process.env.PORT||4000,function() { // Dont Hard set the port
 
 console.log("Listening on the port");
 });
